@@ -28,6 +28,28 @@
             <option value="4">Medium - $4.00</option>
             <option value="5">Large - $5.00</option>
         </select>
+        <!-- Fruit Selection Radio Buttons -->
+<label>Choose your fruit</label>
+<div class="radioGroup">
+    <input type="radio" id="fruit1" name="fruit" value="1.5" onclick="calculateTotal()">
+    <label for="fruit1">Banana - $1.50</label>
+    <input type="radio" id="fruit2" name="fruit" value="2" onclick="calculateTotal()">
+    <label for="fruit2">Strawberries - $2.00</label>
+    <input type="radio" id="fruit3" name="fruit" value="2.5" onclick="calculateTotal()">
+    <label for="fruit3">Blueberries - $2.50</label>
+</div>
+
+<!-- Protein Selection Radio Buttons -->
+<label>Choose your protein</label>
+<div class="radioGroup">
+    <input type="radio" id="protein1" name="protein" value="1" onclick="calculateTotal()">
+    <label for="protein1">Whey Protein - $1.00</label>
+    <input type="radio" id="protein2" name="protein" value="1.5" onclick="calculateTotal()">
+    <label for="protein2">Soy Protein - $1.50</label>
+    <input type="radio" id="protein3" name="protein" value="2" onclick="calculateTotal()">
+    <label for="protein3">Pea Protein - $2.00</label>
+</div>
+
     </form>
     
     <div id="orderSummary">
