@@ -10,6 +10,26 @@
     <form id="smoothieForm">
         <!-- Additional elements will be added in the next steps -->
     </form>
+    <form id="smoothieForm">
+        <!-- Base Selection Dropdown -->
+        <label for="base">Choose your base</label>
+        <select id="base" name="base" onchange="calculateTotal()">
+            <option value="0">Select a base</option>
+            <option value="2.5">Milk - $2.50</option>
+            <option value="3">Almond Milk - $3.00</option>
+            <option value="3.5">Coconut Water - $3.50</option>
+        </select>
+    
+        <!-- Size Selection Dropdown -->
+        <label for="size">Choose your size</label>
+        <select id="size" name="size" onchange="calculateTotal()">
+            <option value="0">Select size</option>
+            <option value="3">Small - $3.00</option>
+            <option value="4">Medium - $4.00</option>
+            <option value="5">Large - $5.00</option>
+        </select>
+    </form>
+    
     <div id="orderSummary">
         <h3>Your Smoothie Order</h3>
         <p id="selectedItems"></p>
