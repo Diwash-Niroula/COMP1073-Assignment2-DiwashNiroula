@@ -18,6 +18,19 @@ function calculateTotal() {
         total += parseFloat(sizeItem.value);
         selectedItems.push(`${sizeItem.getAttribute("data-item")} - $${parseFloat(sizeItem.value).toFixed(2)}`);
     }
+// Radio button selections (Fruit and Protein)
+const fruitSelection = document.querySelector('input[name="fruit"]:checked');
+const proteinSelection = document.querySelector('input[name="protein"]:checked');
+
+if (fruitSelection) {
+    total += parseFloat(fruitSelection.value);
+    selectedItems.push(`${fruitSelection.getAttribute("data-item")} - $${parseFloat(fruitSelection.value).toFixed(2)}`);
+}
+
+if (proteinSelection) {
+    total += parseFloat(proteinSelection.value);
+    selectedItems.push(`${proteinSelection.getAttribute("data-item")} - $${parseFloat(proteinSelection.value).toFixed(2)}`);
+}
 
     // Code to add other selections and update the order summary will follow in next steps
 }
