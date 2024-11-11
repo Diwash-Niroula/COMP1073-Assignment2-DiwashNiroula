@@ -32,5 +32,8 @@ if (proteinSelection) {
     selectedItems.push(`${proteinSelection.getAttribute("data-item")} - $${parseFloat(proteinSelection.value).toFixed(2)}`);
 }
 
-    // Code to add other selections and update the order summary will follow in next steps
+// Update order summary
+document.getElementById('selected-items').innerHTML = selectedItems.join('<br>');
+document.getElementById('total-price').innerHTML = `Total Price: $${total.toFixed(2)}`;
+// Code to add other selections and update the order summary will follow in next steps
 }
